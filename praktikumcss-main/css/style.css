@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: min(96%, 1000px);
+    margin: 8px auto;
+    padding: 5px;
+    border: 1px solid #6f9bc1;
+    background-color: #f5f4df;
+    color: #171717;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+
+#header {
+    margin-bottom: 8px;
+    padding: 12px 10px 10px;
+    background-color: #dfbd8d;
+    color: #10149a;
+    text-align: center;
+}
+
+#header h1 {
+    margin: 0 0 10px;
+    font-size: 21px;
+}
+
+#header blockquote {
+    margin: 0 auto;
+    padding: 4px 8px;
+    background-color: #ffdc00;
+    color: #171717;
+    font-size: 11px;
+}
+
+#soekarno {
+    font-weight: normal;
+    font-style: normal;
+}
+
+body > div:nth-of-type(2) {
+    margin: 0 0 6px;
+    text-align: center;
+    font-size: 11px;
+}
+
+body > div:nth-of-type(2) ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #49365f;
+}
+
+.gambar,
+.koleksi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin: 0 auto 8px;
+}
+
+.gambar img {
+    width: min(20%, 115px);
+    min-width: 90px;
+    height: auto;
+}
+
+.koleksi img {
+    width: min(22%, 150px);
+    height: auto;
+}
+
+.isi,
+#profil,
+#beternak,
+.promo {
+    padding: 5px 2px;
+}
+
+.isi p,
+#beternak p {
+    margin: 5px 0;
+    font-size: 11px;
+    text-align: justify;
+}
+
+.isi p:first-child::first-letter {
+    float: left;
+    padding-right: 1px;
+    color: #1119a8;
+    font-size: 36px;
+    line-height: 0.8;
+}
+
+.jawa {
+    font-weight: normal;
+}
+
+#profil h3,
+#beternak h3 {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+#profil ul,
+#beternak ol {
+    padding-left: 22px;
+    font-size: 11px;
+}
+
+#profil li,
+#beternak li {
+    margin-bottom: 5px;
+}
+
+#beternak h4 {
+    margin: 5px 0;
+}
+
+.promo {
+    background-color: #dfbd8d;
+    text-align: center;
+}
+
+.promo h2 {
+    margin: 4px 0;
+    font-size: 18px;
+}
+
+.promo h3,
+.promo h4 {
+    margin: 6px 0;
+}
+
+.promo ol {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 6px 0;
+    padding: 0;
+    list-style: none;
+}
+
+#Wa {
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    body {
+        width: calc(100% - 12px);
+        margin: 6px auto;
+    }
+
+    #header {
+        padding: 10px 6px;
+    }
+
+    #header h1 {
+        font-size: 18px;
+    }
+
+    .gambar img {
+        width: min(44%, 150px);
+    }
+}
