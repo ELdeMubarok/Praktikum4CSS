@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Praktikum Mandiri JavaScript</title>
+</head>
+<body>
+  <h2>Praktikum Mandiri: Pengolah Nilai Mahasiswa</h2>
+  <p>Lihat hasil melalui Console (F12).</p>
+
+  <script>
+    // 1. Data mahasiswa dan nilai
+    const namaMahasiswa = "Alya";
+    const nilaiTugas = 80;
+    const nilaiUTS = 70;
+    const nilaiUAS = 90;
+
+    // 2. Menghitung nilai akhir (Tugas 30% + UTS 30% + UAS 40%)
+    const nilaiAkhir = (nilaiTugas * 0.30) + (nilaiUTS * 0.30) + (nilaiUAS * 0.40);
+
+    // 3. Menentukan status kelulusan
+    let statusKelulusan;
+    if (nilaiAkhir >= 60) {
+      statusKelulusan = "LULUS";
+    } else {
+      statusKelulusan = "TIDAK LULUS";
+    }
+
+    // 4. Menampilkan output wajib ke Console
+    console.log("Nama Mahasiswa:", namaMahasiswa);
+    console.log("Nilai Akhir:", nilaiAkhir);
+    console.log("Status Kelulusan:", statusKelulusan);
+  </script>
+</body>
+</html>
